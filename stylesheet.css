@@ -1,0 +1,33 @@
+h1 {
+  text-align : center;
+  font-family: 'Times New Roman';
+  font-size: 80px;
+}
+
+body {
+  background-color: gray;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+  display: flex }  li {
+  float: left;
+  padding-left: 20px;
+  padding-righft: 20px  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
