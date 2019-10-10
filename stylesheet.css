@@ -18,7 +18,7 @@ ul {
   display: flex }  li {
   float: left;
   padding-left: 20px;
-  padding-righft: 20px  }
+  padding-right: 20px  }
 
 li a {
   display: block;
