@@ -3,6 +3,13 @@
 <head>
   <link rel="stylesheet" href="stylesheet.css">
   <title>Tides of Terragos</title>
+  <script>
+	function addDeck() {
+	window.alert("damn");
+		document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
+	}
+</script>
+
 </head>
 <body>
 
@@ -16,6 +23,27 @@
 
   <h1>Tides of Terragos</h1>
   <h2>Decks</h2>
-  <p></p>
+  
+  <p>Enter the cards you want in your deck!</p>
+  
+  <form action="/action_page.php">
+  <textarea id="decklist" style="width:250px;height:150px;"></textarea>
+  <br>
+  <input type="button" onclick="addDeck{)" value="Submit">
+</form> 
+
+<p id="deckP">
+</p>
+
+
+  <hr>
+   <footer>
+	<p>Website Created by: Harrison Weese & Alex White</p>
+	<p>Contact Information: <a href="mailto:TidesofTerragos@gmail.com">
+  TidesofTerragos@gmail.com</a>.</p>
+	</footer> 
+	<hr>
+  
+  
 </body>
 </html>
