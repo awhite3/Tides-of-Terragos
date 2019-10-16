@@ -4,19 +4,126 @@
   <link rel="stylesheet" href="stylesheet.css">
   <title>Tides of Terragos</title>
   
+  <style>
+
+    .container {
+      border: 3px solid black;
+      padding: 20px 40px 40px;
+      position: absolute;
+      left: 20%;
+      right: 20%;
+    }
+    .container__image {
+      display: inline-block;
+      vertical-align: top;
+      width: 46%;
+      margin: 20px 30px 0 0;
+    }
+    .container__text {
+      display: inline-block;
+      width: 46%;
+        
+    }
+   
+  </style>
+
+  <script>  
+
+  function slide(img){
+    if(img.getAttribute('src') == "Island Savior/1.png") {
+      img.src = "Island Savior/2.png";
+    } else if(img.getAttribute('src') == "Island Savior/2.png") {
+      img.src = "Island Savior/3.png";
+    } else if(img.getAttribute('src') == "Island Savior/3.png") {
+      img.src = "Island Savior/4.png";
+    } else if(img.getAttribute('src') == "Island Savior/4.png") {
+      img.src = "Island Savior/5.png";
+    } else if(img.getAttribute('src') == "Island Savior/5.png") {
+      img.src = "Island Savior/6.png";
+    } else if(img.getAttribute('src') == "Island Savior/6.png") {
+      img.src = "Island Savior/7.png";
+    } else if(img.getAttribute('src') == "Island Savior/7.png") {
+      img.src = "Island Savior/8.png";
+    } else {
+      img.src = "Island Savior/1.png";
+    }
+  }
+  
+  </script>
+
 </head>
 <body>
 
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="instructions.html">Instructions</a></li>
-    <li><a href="decks.html">Decks</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="search.html">Search</a></li>
-</ul>
+    <!--<div class="backGreyGround">-->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="instructions.html">Instructions</a></li>
+      <li><a href="decks.html">Decks</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
 
-  <h1>Tides of Terragos</h1>
-  <h2>Contact Us</h2>
+    <h1>The Evolution of <br> Tides of Terragos</h1>
+
+    <div class="container">
+        <img class="container__image" src="Island Savior/1.png" width="280dp" onclick="slide(this)">
+        <div class="container__text">
+            <h2>How has the game evolved?</h2>
+            <p>"Cats like boxes because they are cryptic animals; they like to hide," Stephen Zawistowski, science adviser for the American Society for the Prevention of Cruelty to Animals, told Business Insider. "And a box gives them a place of safety and security."</p>
+            <p>While inside a box, cats feel that they cannot be snuck up on from behind or the side — anything that wants to approach them must come directly into their field of vision. In effect, such hiding spaces allow them to watch the world around them without being seen.</p>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+
+
+<!--
+  <div class="container" style="margin-right: 10px;">
+    <img width="280" onclick="slide(this)" src="Island Savior/1.png" style=" ">
+    <p class="description">
+    <p>
+      Hello this is me typingerdtfyguuuuuuuuuuuuuuuuuuuuuuu
+    </p>
+    
+  </div>
+
+  <br>
+ 
+
+  
+  <div id="Harrison">
+    <img src="Harrison.jpg" width="250" style="float: left; margin-right: 10px;">
+    
+    Contact Us: <br>
+    Email: TidesOfTerragos@gmail.com <br>
+    Phone: 470-219-3303 <br>
+  </div>
+  
+  <br>
+
+  <details>
+    <summary style="border: 1;"> Is there any way that I can help? </summary>
+    I am still testing and balancing the game, so if you are
+    <br> interested in learning and playing the game, just text  
+    <br> me or come talk to me and we can meet up and play! 
+  </details>
+  <br>
+  <details>
+    <summary> Can I play this game online? </summary>
+    I am currently do not have this game online. However, I 
+    <br> I am using an application called Tabletop Simulator,
+    <br> from Steam, and I have my cards uploaded and have 
+    <br> done testing on there with friends. 
+  </details>
+
   <p></p>
+
+-->
 </body>
 </html>
