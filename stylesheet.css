@@ -1,11 +1,27 @@
-h1 {
+h1, h3 {
   text-align : center;
   font-family: 'Times New Roman';
+}
+
+h1{
   font-size: 80px;
 }
 
+h3{
+  font-size: 50px;
+}
+
+hr {
+  background-color: #333;
+  border-color: #333;
+  border-width: 1.8px;
+}
+
 body {
-  background-color: gray;
+  background-image: url("OtherImages/water.png");
+  background-position: center top;
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 ul {
@@ -17,17 +33,51 @@ ul {
   justify-content: center;
   display: flex }  li {
   float: left;
-  padding-left: 20px;
-  padding-right: 20px  }
+  padding-left: 20dp;
+  padding-right: 20dp;
+}
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
 li a:hover {
   background-color: #111;
+}
+
+.backGreyGround {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  background-image: linear-gradient(to right, lightgrey, grey, grey, grey, grey, lightgrey);
+  border: solid 3px #333;
+}
+
+.container {
+  /*border: 3px solid black;*/
+  padding: 20px 40px 40px;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+}
+
+.container__image {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 20px 30px 0 0;
+}
+
+.container__text {
+  display: inline-block;
+  width: 46%;    
+}
+
+.container__text2 {
+  display: inline-block;
+  width: 92%;    
 }
