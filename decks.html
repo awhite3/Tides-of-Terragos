@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <title>Tides of Terragos</title>
-
-  <script>
-    function addDeck() {
-      document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
-    }
-  </script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="deckpush.js"></script>
+    <title>Tides of Terragos</title>
 
 </head>
 <body>
@@ -26,10 +21,10 @@
     
     <p>Enter the cards you want in your deck!</p>
   
-    <form action="/action_page.php">
+    <form>
       <textarea id="decklist" style="width:250px;height:150px;"></textarea>
       <br>
-      <input type="button" onclick="addDeck()" value="Submit">
+      <input type="button" id="button1" onclick="addDeck" value="Submit">
     </form> 
 
 <p id="deckP">
