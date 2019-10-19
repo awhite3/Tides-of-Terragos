@@ -4,5 +4,5 @@ window.onload = function () {
 }
 
 function addDeck() {
-    document.getElementById("deckP").innerHTML = "<br>" + document.getElementById("decklist").value;
+    document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
 }
