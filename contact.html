@@ -20,7 +20,28 @@
     } else if(img.getAttribute('src') == "Island Savior/6.png") {
       img.src = "Island Savior/7.png";
     } else if(img.getAttribute('src') == "Island Savior/7.png") {
-      img.src = "Island Savior/8.png";
+      img.src = "Pics of Cards2/69) Island Savior.png";
+    } else {
+      img.src = "Island Savior/1.png";
+    }
+  }
+
+  function slide2(){
+    img = document.getElementById("slideshow");
+    if(img.getAttribute('src') == "Island Savior/1.png") {
+      img.src = "Island Savior/2.png";
+    } else if(img.getAttribute('src') == "Island Savior/2.png") {
+      img.src = "Island Savior/3.png";
+    } else if(img.getAttribute('src') == "Island Savior/3.png") {
+      img.src = "Island Savior/4.png";
+    } else if(img.getAttribute('src') == "Island Savior/4.png") {
+      img.src = "Island Savior/5.png";
+    } else if(img.getAttribute('src') == "Island Savior/5.png") {
+      img.src = "Island Savior/6.png";
+    } else if(img.getAttribute('src') == "Island Savior/6.png") {
+      img.src = "Island Savior/7.png";
+    } else if(img.getAttribute('src') == "Island Savior/7.png") {
+      img.src = "Pics of Cards2/69) Island Savior.png";
     } else {
       img.src = "Island Savior/1.png";
     }
@@ -43,15 +64,18 @@
       <h1>Tides of Terragos</h1>
 
       <div class="container">
-          <img class="container__image" src="Island Savior/1.png" width="280dp" onclick="slide(this)">
+          <img class="container__image" id="slideshow" src="Island Savior/1.png" style="margin-top: 88px; width: 60mm;" onclick="slide(this)">
+          <button style="position: absolute; left: 7.3%; top: 78%;" onclick="slide2()"> Next Image </button>
           <div class="container__text">
-              <h3> Evolution of the Game </h3>
-              <p>"Cats like boxes because they are cryptic animals; they like to hide," Stephen Zawistowski, science adviser for the American Society for the Prevention of Cruelty to Animals, told Business Insider. "And a box gives them a place of safety and security."</p>
-              <p>While inside a box, cats feel that they cannot be snuck up on from behind or the side — anything that wants to approach them must come directly into their field of vision. In effect, such hiding spaces allow them to watch the world around them without being seen.</p>
+            <h3> Evolution of the Game </h3>
+            <p>The game began as a super simple game that I played with some friends in high school. As a Senior in high school I decided to make about 10 cards that looked just liek the inital picture here on the left. However, as time progressed the game developed at an exponential rate. More and more people had become interested in it, and I came up with more and more unique cards.</p>
+            <p>The game was initially named Island Hopping, but soon was rebranded into Tides of War. However, last year, Disney released <i>Pirates of the Caribean: Tides of War</i> onto the appstore. That forced to rebrand again to what it is known as today: Tides of Terragos. </p>
+          </div>
+          <div class="container__text2" style="width: 85%;">
+            <p>I have hosted four different tournaments over the last four years and have had a blast creating, balancing, and testing my card game with friends. If you have any interest in helping me test the game, please contact Harrison Weese at TidesOfTerragos@gmail.com ! </p>
           </div>
       </div>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -66,31 +90,7 @@
   
   </div>
 
-
-<!--
-  <div class="container" style="margin-right: 10px;">
-    <img width="280" onclick="slide(this)" src="Island Savior/1.png" style=" ">
-    <p class="description">
-    <p>
-      Hello this is me typingerdtfyguuuuuuuuuuuuuuuuuuuuuuu
-    </p>
-    
-  </div>
-
-  <br>
- 
-
-  
-  <div id="Harrison">
-    <img src="Harrison.jpg" width="250" style="float: left; margin-right: 10px;">
-    
-    Contact Us: <br>
-    Email: TidesOfTerragos@gmail.com <br>
-    Phone: 470-219-3303 <br>
-  </div>
-  
-  <br>
-
+  <!--
   <details>
     <summary style="border: 1;"> Is there any way that I can help? </summary>
     I am still testing and balancing the game, so if you are
@@ -106,9 +106,6 @@
     <br> done testing on there with friends. 
   </details>
 
-  <p></p>
-
 -->
 </body>
 </html>
-
