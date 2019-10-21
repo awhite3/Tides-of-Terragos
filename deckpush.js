@@ -4,5 +4,6 @@ window.onload = function () {
 }
 
 function addDeck() {
+    window.alert(document.getElementById("decklist").value);
     document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
 }
