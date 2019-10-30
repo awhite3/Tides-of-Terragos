@@ -2,8 +2,20 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="deckpush.js"></script>
     <script src="headBanner.js"></script>
+    <script> 
+
+    function addDeck() {
+      window.alert(document.getElementById("decklist").value);
+      document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
+    }
+
+
+    /*push*/
+    </script>
+    
+
+
     <title>Tides of Terragos</title>
 </head>
 <body>
@@ -30,7 +42,6 @@
         </textarea>
         <br>
         <button id="button2" onclick="addDeck()">Submit</button>
-        <input type="button" id="button1" value="Submit">
       </form> 
 
       <p id="deckP"> </p>
