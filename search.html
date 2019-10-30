@@ -3,7 +3,9 @@
 <head>
   <link rel="stylesheet" href="stylesheet.css">
   <title>Tides of Terragos</title>
-  <script src="headBanner.js"></script>
+  <script src="headBanner.js">
+  /*push*/
+  </script>
 </head>
 <body>
 
@@ -13,36 +15,87 @@
             <li><a href="instructions.html">Instructions</a></li>
             <li><a href="decks.html">Decks</a></li>
             <li><a href="contact.html">History</a></li>
-            <li><a href="search.html">Search</a></li>
+            <li><a href="search.html">Search</a></li> 
         </ul>
 
         <img id="HeadBanner" class="container__image" alt="image" src="OtherImages/TitleGray2.png" style="width: 40%; margin-left: 30.0%;">
         
-        <p align="center">
-            You can search by the card's name or the type!
-        </p>
+        <h3> Advanced Search</h3>>
 
-        <div style="margin-left: 5%;">
-          <form>
-              Name of Card:<br>
-              <input type="text" name="firstname" placeholder="Search.." style="width:166px;">
-              <br>
-              <button id="button2" onclick="searchName()">Submit</button>
-          </form>
-          <br>
-          <form>
-              Type of Card:<br>
-              <select style="width:166px;">
-                  <option></option>
-                  <option>Battleship</option>
-                  <option>Aircraft</option>
-                  <option>Ironclad</option>
-                  <option>Submarine</option>
-              </select>
-              <br>
-              <button id="button2" onclick="searchType()">Submit</button>
-          </form>
-        </div>
+        
+        <table align="center">
+                <form>    
+                    
+            <tr>
+                <td colspan="2" style="text-align:center;"><p>
+                    Name of Card:
+                    <input type="text" name="name" placeholder="Search.." style="width:166px;"></p>
+                    
+                </td>
+
+            </tr>
+            
+            <tr>
+                <td>
+                    <fieldset style="width: 300px;">      
+                        <legend>Type of Card:</legend>      
+                        <input type="checkbox" name="type" value="Battleship">Battleship<br>      
+                        <input type="checkbox" name="type" value="Aircraft">Aircraft<br>      
+                        <input type="checkbox" name="type" value="Ironclad">Ironclad<br> 
+                        <input type="checkbox" name="type" value="Submarine">Submarine<br>
+                        <input type="checkbox" name="type" value="Structure">Structure<br>              
+                    </fieldset> 
+                </td>
+                <td>
+                    <fieldset style="width: 300px;">      
+                        <legend>Cost of Card:</legend>      
+                        <input type="checkbox" name="cost" value="1Million">$1 Million<br>      
+                        <input type="checkbox" name="cost" value="2Million">$2 Million<br>      
+                        <input type="checkbox" name="cost" value="3Million">$3 Million<br> 
+                        <input type="checkbox" name="cost" value="4Million">$4 Million<br>
+                        <input type="checkbox" name="cost" value="5Million">$5 Million<br>              
+                    </fieldset> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset style="width: 300px;">      
+                        <legend>Squadron:</legend>      
+                        <input type="checkbox" name="type" value="Bird">Bird<br>      
+                        <input type="checkbox" name="type" value="Blood">Blood<br>      
+                        <input type="checkbox" name="type" value="Bomber">Bomber<br> 
+                        <input type="checkbox" name="type" value="Control">Control<br>
+                        <input type="checkbox" name="type" value="Dragon">Dragon<br>   
+                        <input type="checkbox" name="type" value="Deep">Deep<br>      
+                        <input type="checkbox" name="type" value="Demon">Demon<br>      
+                        <input type="checkbox" name="type" value="Dinosaur">Dinosaur<br> 
+                        <input type="checkbox" name="type" value="Insect">Insect<br>
+                        <input type="checkbox" name="type" value="Medical">Medical<br>     
+                        <input type="checkbox" name="type" value="Pirate">Pirate<br>
+                        <input type="checkbox" name="type" value="Vision">Vision<br>          
+                    </fieldset> 
+                </td>
+                <td>
+                    <fieldset style="width: 300px;">      
+                        <legend>Attributes:</legend>      
+                        <input type="checkbox" name="type" value="Trait">Trait<br>      
+                        <input type="checkbox" name="type" value="Active">Active<br>      
+                        <input type="checkbox" name="type" value="Re-Active">Re-Active<br> 
+                        <input type="checkbox" name="type" value="Offensive_Maneuver">Offensive Maneuver<br>
+                        <input type="checkbox" name="type" value="Defensive_Maneuver">Defensive Maneuver<br>    
+                        <input type="checkbox" name="type" value="Bounty">Bounty<br>
+                        <input type="checkbox" name="type" value="Retire">Retire<br>          
+                    </fieldset> 
+                </td>
+            </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <br>
+                <button id="button2" onclick="search()">Submit</button>
+                </form>
+            </td>
+        </tr>
+        </table>   
 
 
         
