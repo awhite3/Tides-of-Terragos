@@ -10,6 +10,185 @@
       document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
     }
 
+    window.onload = function()
+  {
+    document.getElementById("HeadBanner").addEventListener("click", navigateHome);
+
+      var images = document.getElementsByTagName('img');
+      for(var i = 0; i < images.length; i++)
+      {
+        images.item(i).addEventListener("click", enlargePicture);
+      }
+    }
+
+      function enlargePicture()
+      {
+      anyAreBig = false;
+      var images = document.getElementsByTagName('img');
+      for(var i = 0; i < images.length; i++)
+      {
+          if(images.item(i).width == 300){
+              anyAreBig = true;
+          }
+      }
+
+
+      if(this.width == 300){
+
+          var images = document.getElementsByTagName('img');
+          for(var i = 0; i < images.length; i++)
+          {
+              images.item(i).width = 112;
+          } 
+
+      } else if(this.width == 112 && anyAreBig){
+
+          var images = document.getElementsByTagName('img');
+          for(var i = 0; i < images.length; i++)
+          {
+              images.item(i).width = 112;
+          } 
+          this.width = 300;
+
+      } else {
+          this.width = 300;
+      }
+    }
+
+  
+    </script>
+    
+
+
+    <title>Tides of Terragos</title>
+</head>
+<body>
+
+  <div class="backGreyGround">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="instructions.html">Instructions</a></li>
+      <li><a href="decks.html">Decks</a></li>
+      <li><a href="contact.html">History</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+    
+    <img id="HeadBanner" class="container__image" alt="image" src="OtherImages/TitleGray2.png" style="width: 40%; margin-left: 30.0%;">
+    <h3> Reccomended Decklists </h3>
+    <br>
+    <h3> Classic Strength </h5>
+
+    <table align="center">
+
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/2)Lord_Darius.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/3)Volten.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+        </tr>
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/18)Dreadnaught.png"></td>
+        </tr>
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/18)Dreadnaught.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/90)Refuse.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/31)Supa_Doc.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/31)Supa_Doc.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+        </tr>
+      </table>
+
+      <br>
+      <h3> Submarine Tribal </h5>
+
+      <table align="center">
+
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/2)Lord_Darius.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/3)Volten.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+        </tr>
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/32)Destroyer.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/63)Sinai.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/94)Deceiver.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/1)Furnace.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/18)Dreadnaught.png"></td>
+        </tr>
+        <tr>
+            <td><img width="112" alt="image" src="Pics-Cards/18)Dreadnaught.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/90)Refuse.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/31)Supa_Doc.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/31)Supa_Doc.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/25)Mimic.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+            <td><img width="112" alt="image" src="Pics-Cards/29)Berserker.png"></td>
+        </tr>
+      </table>
+
+<br><br>
+
+    <br>
+    <hr>
+    <footer>
+      <p> &nbsp; Website Created by: Harrison Weese & Alex White</p>
+      <p> &nbsp; Contact Information: TidesofTerragos@gmail.com</p>
+    </footer>   
+    <hr>
+
+  </div>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="headBanner.js"></script>
+    <script> 
+
+    function addDeck() {
+      window.alert(document.getElementById("decklist").value);
+      document.getElementById("deckP").innerHTML = document.getElementById("decklist").value;
+    }
+
 
     /*push*/
     </script>
@@ -59,4 +238,4 @@
   </div>
 
 </body>
-</html>
+</html>-->
